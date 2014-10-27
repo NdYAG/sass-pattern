@@ -1,0 +1,32 @@
+%Button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    cursor: default;
+  }
+}
