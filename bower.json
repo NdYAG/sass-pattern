@@ -1,0 +1,23 @@
+{
+  "name": "neutron",
+  "version": "0.1.0",
+  "homepage": "https://github.com/NdYAG/neutron",
+  "authors": [
+    "siemonday <siemonday@gmail.com>"
+  ],
+  "description": "Utilities for quick Sass development",
+  "main": "_neutron.scss",
+  "keywords": [
+    "neutron",
+    "sass",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
