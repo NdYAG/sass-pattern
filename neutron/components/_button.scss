@@ -9,9 +9,7 @@
   text-align: center;
   text-decoration: none;
   white-space: normal;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  outline: 0;
   user-select: none;
 
   &::-moz-focus-inner {

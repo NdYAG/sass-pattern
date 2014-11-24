@@ -11,17 +11,17 @@
 }
 
 
-/*
- *  Media Object:
- *  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
- *
- *  +---------+ ~~~~~~
- *  |         | ~~~~~~~~~
- *  |         | ~~~~~~~~~
- *  |         | ~~~~~~~~~
- *  |         |
- *  +---------+
- */
+//
+//  Media Object:
+//  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+//
+//  +---------+ ~~~~~~
+//  |         | ~~~~~~~~~
+//  |         | ~~~~~~~~~
+//  |         | ~~~~~~~~~
+//  |         |
+//  +---------+
+//
 
 @mixin Media($left, $right, $gutter: 0, $atRoot: true) {
   @extend %u-bfc;
@@ -39,18 +39,18 @@
 }
 
 
-/*
- *  Flag Object:
- *  http://csswizardry.com/2013/05/the-flag-object/
- *
- *  +---------+
- *  |         | ~~~~~
- *  |         | ~~~~~~~~~
- *  |         | ~~~~~~~~~
- *  |         | ~~~~~~
- *  +---------+
- *
- */
+//
+//  Flag Object:
+//  http://csswizardry.com/2013/05/the-flag-object/
+//
+//  +---------+
+//  |         | ~~~~~
+//  |         | ~~~~~~~~~
+//  |         | ~~~~~~~~~
+//  |         | ~~~~~~
+//  +---------+
+//
+
 @mixin Flag($left, $right, $align: middle, $gutter: 0, $atRoot: true) {
   @extend %u-table;
   @include atRoot($atRoot) {
@@ -68,19 +68,18 @@
 }
 
 
-/*
- *  Balance Object:
- *
- *  +-----------------------------------------+
- *  | +---------+                             |
- *  | |         |                     +-----+ |
- *  | |         |                     |~~~~~| |
- *  | |         |                     |~~~~~| |
- *  | |         |                     +-----+ |
- *  | +---------+                             |
- *  +-----------------------------------------+
- *
- */
+//
+//  Balance Object:
+//
+//  +-----------------------------------------+
+//  | +---------+                             |
+//  | |         |                     +-----+ |
+//  | |         |                     |~~~~~| |
+//  | |         |                     |~~~~~| |
+//  | |         |                     +-----+ |
+//  | +---------+                             |
+//  +-----------------------------------------+
+//
 // @private
 %_balance {
   display: flex;
