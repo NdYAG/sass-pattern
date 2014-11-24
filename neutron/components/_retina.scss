@@ -1,10 +1,10 @@
-/*
- *  If you're using this for a single image,
- *  leave $bgSize empty.
- *  If you're using this for a retina sprite,
- *  set $bgSize the size of your @1x image.
- *  http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/
- */
+//
+//  If you're using this for a single image,
+//  leave $bgSize empty.
+//  If you're using this for a retina sprite,
+//  set $bgSize the size of your @1x image.
+//  http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/
+//
 @mixin Retina($img, $img2x, $bgSize: cover) {
   background-image: $img;
   @media (-webkit-min-device-pixel-ratio: 2),
@@ -16,10 +16,10 @@
 }
 
 
-/*
- *  Currently do not support border-radius
- *  as rx/ry of 0.5 width rect is not well rendered in browsers.
- */
+//
+//  Currently do not support border-radius
+//  as rx/ry of 0.5 width rect is not well rendered in browsers.
+//
 @mixin HalfPixelBorder($color: #000, $dir: none) {
   @if $dir != none {
     border-#{dir}: 1px solid $color;

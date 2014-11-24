@@ -9,20 +9,13 @@
   text-align: center;
   text-decoration: none;
   white-space: normal;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  outline: 0;
   user-select: none;
+  text-decoration: none;
 
   &::-moz-focus-inner {
     border: 0;
     padding: 0;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: none;
   }
 
   &:disabled,
