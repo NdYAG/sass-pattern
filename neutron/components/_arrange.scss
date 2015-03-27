@@ -106,3 +106,33 @@
     @extend %_balance;
   }
 }
+
+//
+// Space Between:
+//
+// +---------+                      +------------+
+// |         |      +-------+       |            |
+// |         |      |       |       |            |
+// |         |      |       |       |            |
+// |         |      +-------+       |            |
+// +---------+                      +------------+
+//
+%_spacebetween {
+  text-align: justify;
+  text-justify: distribute;
+  -ms-text-justify: distribute;
+  > * {
+    display: inline-block;
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+}
+@mixin SpaceBetween($align: middle) {
+  @extend %_spacebetween;
+  > * {
+    vertical-align: $align;
+  }
+}
