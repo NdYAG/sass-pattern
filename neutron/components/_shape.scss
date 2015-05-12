@@ -1,0 +1,15 @@
+@mixin Rect($width, $height, $radius: 0) {
+  width: $width;
+  height: $height;
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+@mixin Square($length, $radius: 0) {
+  @include Rect($length, $length, $radius);
+}
+
+@mixin Circle($diameter) {
+  @include Square($diameter, 50%);
+}
