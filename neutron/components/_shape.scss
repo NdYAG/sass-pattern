@@ -13,3 +13,14 @@
 @mixin Circle($diameter) {
   @include Square($diameter, 50%);
 }
+
+// auto scaling
+// $ratio = width/height
+@mixin Ratio($ratio) {
+  overflow: hidden;
+  &:before {
+    content: "";
+    float: left;
+    margin-top: percentage(1/$ratio);
+  }
+}
