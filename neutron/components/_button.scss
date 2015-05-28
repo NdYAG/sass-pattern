@@ -23,3 +23,7 @@
     cursor: default;
   }
 }
+@mixin Button {
+  @extend %Button;
+  @content;
+}
