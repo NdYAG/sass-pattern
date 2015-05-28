@@ -121,6 +121,7 @@
   text-align: justify;
   text-justify: distribute;
   -ms-text-justify: distribute;
+  font-size: 0;
   > * {
     display: inline-block;
   }
@@ -130,9 +131,10 @@
     display: inline-block;
   }
 }
-@mixin SpaceBetween($align: middle) {
+@mixin SpaceBetween($align: middle, $fontSize: 1rem) {
   @extend %_spacebetween;
   > * {
     vertical-align: $align;
+    font-size: $fontSize;
   }
 }
