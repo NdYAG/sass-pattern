@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Neutron</title>
+        <link href="./prism-tomorrow.css" rel="stylesheet">
+        <link href="./main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Neutron</h1>
+            <h2>A collection of Sass mixins to ease our styling development.</h2>
+            <div>
+                <a href="https://github.com/NdYAG/neutron" target="_blank">View on Github</a>
+            </div>
+        </header>
+        <main>
+            <h2>Examples</h2>
+            <section>
+                <h3>Easy Style Reset</h3>
+                <pre>
+                    <code class="language-scss">
+@include Reset {
+    body {
+        @include SansSerif;
+        line-height: 1.65;
+        color: #111;
+    }
+    a {
+        color: #38c;
+        &:hover {
+            color: lighten(#38c, 10%);
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+                    </code></pre>
+            </section>
+            <section>
+                <h3>Article Rendering (with normalize.css) </h3>
+                <pre><code class="language-scss">
+@include ResetTitle {
+    @include Smoothing;
+};
+body {
+    @include SansSerif;
+    line-height: 1.65;
+}
+                </code></pre>
+            </section>
+            <section>
+                <h3>Responsive Card</h3>
+                <pre><code class="language-scss">
+.card {
+    width: 50%;
+    @include Ratio(1.2);
+}
+                </code></pre>
+            </section>
+            <section>
+                <h3>Ellipsis</h3>
+                <pre><code class="language-scss">
+.oneline {
+    @include Ellipsis;
+}
+.multiline {
+    @include Clamp(3);
+}
+                </code></pre>
+            </section>
+        </main>
+        <footer>Find the <a href="https://github.com/NdYAG/neutron/wiki/Documentation">documentation</a> on github.</footer>
+    </body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+</html>
