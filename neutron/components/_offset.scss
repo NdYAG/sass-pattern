@@ -1,0 +1,41 @@
+// $insets is short-hand for $top, $right, $bottom, $left
+// examples:
+// @include Position(absolute, 0);
+// @include Position(absolute, 10px 20px);
+// @include Position(absolute, 10px 20px 30px);
+// @include Position(absolute, 10px 20px 30px 40px);
+// @include Position(absolute, $top: 10px);
+
+@mixin Position($position, $insets: false, $top: false, $right: false, $bottom: false, $left: false) {
+  position: $position;
+  $offsets: false false false false;
+  @if length($insets) == 1 {
+    @for $i from 1 through 4 {
+      $offsets: set-nth($offsets, $i, $insets);
+    }
+  } @else if length($insets) > 1 {
+    @for $i from 1 through 4 {
+      $index: $i % length($insets);
+      @if $index == 0 { $index: length($insets) };
+      $offsets: set-nth($offsets, $i, nth($insets, $index));
+    }
+  }
+  $directions-map: (
+    top: $top,
+    right: $right,
+    bottom: $bottom,
+    left: $left
+  );
+  $directions: map-keys($directions-map);
+  @each $dir in $directions {
+    $index: index($directions, $dir);
+    @if map-get($directions-map, $dir) {
+      #{$dir}: map-get($directions-map, $dir);
+    } @else if nth($offsets, $index) {
+      #{$dir}: nth($offsets, $index);
+    }
+  }
+}
+@mixin Absolute($args...) {
+  @include Position(absolute, $args...);
+}
