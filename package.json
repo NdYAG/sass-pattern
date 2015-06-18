@@ -1,0 +1,23 @@
+{
+  "name": "sass-pattern",
+  "version": "0.1.10",
+  "description": "A list of mixins to ease you from of the pain of repeating same code, and help you focusing on styling.",
+  "main": "_sass-pattern.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NdYAG/sass-pattern.git"
+  },
+  "keywords": [
+    "scss",
+    "mixins"
+  ],
+  "author": "NdYAG <daiximing199078@gmail.com> (http://daix.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NdYAG/sass-pattern/issues"
+  },
+  "homepage": "https://github.com/NdYAG/sass-pattern#readme"
+}
