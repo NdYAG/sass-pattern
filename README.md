@@ -1,6 +1,6 @@
-sass-pattern
+# sass-pattern
 
-A list of mixins to ease you from of the pain of repeating same code, and help you focusing on styling.
+A list of mixins to ease you from of the pain of repeating same code and help you focus on necessary styling.
 
 Create a button:
 
@@ -43,5 +43,5 @@ Create a Media Object:
 
 More examples:
 
-* [in English](https://github.com/NdYAG/sass-pattern/wiki/Documentation)
-* [中文版](https://github.com/NdYAG/sass-pattern/wiki/%E6%96%87%E6%A1%A3)
+* [English](https://github.com/NdYAG/sass-pattern/wiki/Documentation)
+* [简体中文](https://github.com/NdYAG/sass-pattern/wiki/%E6%96%87%E6%A1%A3)
