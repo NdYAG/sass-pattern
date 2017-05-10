@@ -2,13 +2,14 @@
 
 A list of mixins and placeholders to ease you from of the pain of repeating same code and help you focus on necessary styling.
 
-* [Install](#Install)
-* [Arrange](#Arrange)
-* [Button](#Button)
-* [Typography](#Typography)
-* [Retina](#Retina)
-* [Shape](#Shape)
-* [Reset](#Reset)
+* [Install](#install)
+* Styling
+    * [Arrange](#arrange)
+    * [Button](#button)
+    * [Typography](#typography)
+    * [Retina](#retina)
+    * [Shape](#shape)
+    * [Reset](#reset)
 
 ## Install
 
