@@ -29,7 +29,7 @@ Reset style:
 };
 ```
 
-Create a Media Object:
+Create a [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code):
 
 ```scss
 .status {
